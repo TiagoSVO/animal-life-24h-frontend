@@ -11,8 +11,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/'
+        path: path.resolve(__dirname, 'dist')
     },
     devServer: {
         static: {
@@ -73,7 +72,8 @@ module.exports = {
       plugins: [
         new HtmlWebpackPlugin({
           filename: 'index.html',
-          template: './src/index.html'
+          template: './src/index.html',
+          inject: 'body'
         }),
         new MiniCssExtractPlugin({
           filename: 'styles.css'
