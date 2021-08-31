@@ -40,13 +40,6 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/i,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
-            },
-            {
                 test: /.js[x]?$/,
                 exclude: '/node_modules/',
                 use: {
@@ -73,7 +66,8 @@ module.exports = {
         new HtmlWebpackPlugin({
           filename: 'index.html',
           template: './src/index.html',
-          inject: 'body'
+          inject: 'body',
+          minify: false
         }),
         new MiniCssExtractPlugin({
           filename: 'styles.css'
