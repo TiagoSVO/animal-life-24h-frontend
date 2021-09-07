@@ -36,7 +36,24 @@ module.exports = {
                 use: [
                 MiniCssExtractPlugin.loader,
                     'css-loader',
+                    {
+                        // Run postcss actions
+                        loader: 'postcss-loader',
+                        options: {
+                          // `postcssOptions` is needed for postcss 8.x;
+                          // if you use postcss 7.x skip the key
+                          postcssOptions: {
+                            // postcss plugins, can be exported to postcss.config.js
+                            plugins: function () {
+                              return [
+                                require('autoprefixer')
+                              ];
+                            }
+                          }
+                        }
+                      },
                     'sass-loader'
+                    
                 ]
             },
             {
@@ -53,12 +70,8 @@ module.exports = {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loader: 'file-loader',
                 options: {
-                name: '[name].[ext]'
+                  name: '[name].[ext]'
                 }
-            },
-            {
-                test: /\.svg$/,
-                use: ['@svgr/webpack'],
             }
         ]
       },
