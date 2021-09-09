@@ -1,3 +1,7 @@
-export function say_hello() {
+
+
+export function init() {
     console.log('hello!')
+    
 }
+

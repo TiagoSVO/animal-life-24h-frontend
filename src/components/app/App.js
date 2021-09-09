@@ -4,8 +4,9 @@ import Header from '../header/Header';
 import MainCarousel from '../maincarousel/MainCarousel';
 import About from '../about/About';
 import ALServices from '../alservices/ALServices';
+import Team from '../team/Team';
 
-import { say_hello } from '../../assets/js/utils';
+import { init, say_hello } from '../../assets/js/utils';
 import './App.css';
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
             <MainCarousel />
             <About />
             <ALServices />
+            <Team />
             <div>
-                {say_hello()}
+                {init()}
                 <h1>Olá Mundo!</h1>
                 <small>Agora com react.</small>
             </div>

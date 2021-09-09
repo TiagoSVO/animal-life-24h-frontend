@@ -19,10 +19,10 @@ export default class About extends Component {
                     <span className="al-main-about-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
                     <span className="al-main-about-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
                 </div>
-                <div className="al-main-about-title d-flex flex-row justify-content-center align-items-center">
+                <div className="al-main-title d-flex flex-row justify-content-center align-items-center">
                     <span></span>
                     <span></span>
-                    <h1>Quem Somos</h1>
+                    <h2>Quem Somos</h2>
                 </div>
                 <div className="container al-main-about-content d-flex flex-row justify-content-center align-items-center">
                     <div className="row gx-0">

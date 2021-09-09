@@ -1,0 +1,37 @@
+#al-team {
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.al-team-people-wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.al-team-person {
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.al-team-person-content {
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    color: #fff;
+    text-align: justify;
+    position: absolute;
+}
+
+.al-team-person:nth-child(odd) .al-team-person-content {
+    right: 0;
+}
+
+.al-team-person:nth-child(even) .al-team-person-content {
+    left: 0;
+}
