@@ -74,7 +74,13 @@
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+    .al-main-about-pegada {
+        width: 75px;
+        height: 75px;
+        background-size: 65px;
+    }
+    
     .al-main-about-pegadas .al-main-about-pegada:nth-child(1) {
         bottom: 0%;
         right: 15%;
@@ -95,4 +101,29 @@
         right: 0;
     }
     
+    .al-main-about-circles .al-main-about-circle:nth-child(1) {
+        width: 175px;
+        height: 175px;
+        background-color: transparent;
+        border: 15px solid #aaa;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -15%;
+        left: -5%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    
+    .al-main-about-circles .al-main-about-circle:nth-child(2) {
+        width: 125px;
+        height: 125px;
+        background-color: transparent;
+        border: 15px solid #aaa;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -15%;
+        left: -5%;
+        z-index: -1;
+        opacity: 0.5;
+    }
 }

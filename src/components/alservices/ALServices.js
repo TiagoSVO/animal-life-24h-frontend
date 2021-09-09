@@ -16,8 +16,8 @@ export default class ALServices extends Component {
                             <h1>Serviços</h1>
                         </div>
                         <div className="al-services-content container">
-                            <div className="d-flex justify-content-between text-center">
-                                <div className="al-service-card">
+                            <div className="row d-flex justify-content-between text-center">
+                                <div className="col-sm-2 col-lg-3 al-service-card">
                                     <div className="al-hexagon-wrap">
                                         <div className="al-hexagon-img" style={{backgroundImage: 'url(https://picsum.photos/id/87/200)'}} ></div>
                                     </div>
@@ -37,7 +37,7 @@ export default class ALServices extends Component {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="al-service-card">
+                                <div className="col-sm-2 col-lg-3 al-service-card">
                                     <div className="al-hexagon-wrap">
                                         <div className="al-hexagon-img" style={{backgroundImage: 'url(https://picsum.photos/id/87/200)'}} ></div>
                                     </div>
@@ -57,7 +57,7 @@ export default class ALServices extends Component {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="al-service-card">
+                                <div className="col-sm-2 col-lg-3 al-service-card">
                                     <div className="al-hexagon-wrap">
                                         <div className="al-hexagon-img" style={{backgroundImage: 'url(https://picsum.photos/id/87/200)'}} ></div>
                                     </div>
