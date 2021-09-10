@@ -11,6 +11,10 @@
     max-width: 10%;
 }
 
+.al-brand-title {
+    font-size: 1.25rem;
+}
+
 .al-main-menu ul li a{
     border: 1PX solid transparent;
     color:inherit;
@@ -26,8 +30,40 @@
     transition: 0.3s
 }
 
+@media (min-width: 576px) and (max-width: 765px), (max-width: 299px){
+    .al-main-menu .al-brand {
+        max-width: 15%;
+    }
+
+    .al-brand-title {
+        display: none;
+    }
+}
+
+
 @media (max-width: 575px) {
+
     .al-main-menu {
         min-height: 75px;        
+    }
+
+    .al-brand-title {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 365px) {
+    .al-main-menu .al-brand {
+        max-width: 15%;
+    }
+
+    .al-brand-title {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .al-main-menu .al-brand {
+        max-width: 20%;
     }
 }

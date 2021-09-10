@@ -15,6 +15,10 @@ export default class MainMenu extends Component {
                         <a className="navbar-brand al-brand" href="#">
                             <img className="img-fluid" src={logo} alt="logo Animal Life 24h" />
                         </a>
+                        <div className="al-brand-title me-auto">
+                            <span>Centro Avançado<br/>
+                            de Especialidades Veterinárias</span>
+                        </div>
                         <button className="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
