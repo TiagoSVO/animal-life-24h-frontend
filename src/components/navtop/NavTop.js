@@ -8,7 +8,7 @@ export default class NavTop extends Component {
 
     render() {
         return(
-            <nav className="al-top-nav-bar navbar navbar-expand-lg">
+            <nav className="al-top-nav-bar navbar navbar-expand-lg d-none d-md-flex">
                 <div className="container">
                     <div className="w-50">
                         <span className="nav-item me-2">
