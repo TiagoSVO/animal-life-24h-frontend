@@ -9,10 +9,6 @@
     padding-bottom: 20px;
 }
 
-#al-services h3 {
-    margin: 20px 0;
-}
-
 #al-services * {
     z-index: 1;
 }
@@ -39,30 +35,67 @@
     text-transform: uppercase;
 }
 
+#al-services h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
 $hexagon-border: 5;
-$hexagon-size: 200px;
+$hexagon-size: 200;
+$hexagon-u: 1px;
 
 .al-hexagon-wrap {
     display: inline-block;
     position: relative;
-    width: $hexagon-size;
-    height: $hexagon-size;
+    width: $hexagon-size*$hexagon-u;
+    height: $hexagon-size*$hexagon-u;
     background: #fff;
     box-sizing: border-box;
     -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  }
-  .al-hexagon-img {
+}
+.al-hexagon-img {
     position: absolute;
-    top: $hexagon-border * 1px; /* equal to border thickness */
-    left: $hexagon-border * 1px; /* equal to border thickness */
-    width: $hexagon-size - ($hexagon-border * 2px); /* container height - (border thickness * 2) */
-    height: $hexagon-size - ($hexagon-border * 2px); /* container height - (border thickness * 2) */
+    background-size: cover;
+    top: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    left: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
     -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  }
+}
 
-  .al-services-content {
-    padding: 0 20px;
+.al-services-content {
+    padding: 0 10px;
     text-align: justify;
-  }
+}
+
+.al-service-card {
+    margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+    .al-service-card {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    $hexagon-border: 5;
+    $hexagon-size: 150;
+    $hexagon-u: 1px;
+
+    .al-hexagon-wrap {
+        width: $hexagon-size*$hexagon-u;
+        height: $hexagon-size*$hexagon-u;
+    }
+    .al-hexagon-img {
+    top: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    left: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    }
+}
