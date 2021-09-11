@@ -15,20 +15,44 @@
     font-size: 1.25rem;
 }
 
-.al-main-menu ul li a{
-    border: 1PX solid transparent;
+#navbarMainMenu ul li a{
+    border: 1px solid transparent;
     color:inherit;
     border-radius: 3px;
     background-image: transparent;
 }
 
-.al-main-menu ul li a:hover {
+#navbarMainMenu ul li a:hover {
     border: 1px solid #2aac40;
     color: #0d4d79;
     /*background-image: linear-gradient(#2aac40, #0d4d79);*/
     border-radius: 3px;
     transition: 0.3s
 }
+
+
+#navbarMainMenu ul li a:active {
+    border: 1px solid #2aac40;
+    color: #0d4d79;
+    /*background-image: linear-gradient(#2aac40, #0d4d79);*/
+    border-radius: 3px;
+    transition: 0.3s
+}
+
+@media (min-width: 766px) and (max-width: 995px) {
+    .al-main-menu .al-brand {
+        max-width: 15%;
+    }
+
+    .al-brand-title {
+        display: none;
+    }
+
+    #navbarMainMenu {
+        font-size: 0.85em;
+    }
+}
+
 
 @media (min-width: 576px) and (max-width: 765px), (max-width: 299px){
     .al-main-menu .al-brand {
@@ -37,6 +61,10 @@
 
     .al-brand-title {
         display: none;
+    }
+
+    #navbarMainMenu {
+        font-size: 0.8em;
     }
 }
 

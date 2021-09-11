@@ -28,19 +28,22 @@ export default class MainMenu extends Component {
                                     <a className="nav-link active" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Serviços</a>
+                                    <a className="nav-link" href="#al-about">Quem Somos</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#al-services">Serviços</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Clínica</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Notícias</a>
+                                    <a className="nav-link" href="#al-team">Equipe</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Quem Somos</a>
+                                    <a className="nav-link" href="#al-news">Notícias</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Contato</a>
+                                    <a className="nav-link" href="#al-contact">Contato</a>
                                 </li>
                             </ul>
                         </div>

@@ -8,7 +8,7 @@ export default class About extends Component {
     render() {
         return(
             <React.Fragment >
-            <section className="al-main-about" >
+            <section className="al-main-about" id="al-about">
                 <div className="al-main-about-circles">
                     <span className="al-main-about-circle"></span>
                     <span className="al-main-about-circle"></span>
