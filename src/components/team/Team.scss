@@ -12,13 +12,11 @@
 
 .al-team-person {
     background-size: cover;
-    width: 50%;
     height: 100%;
     position: relative;
 }
 
 .al-team-person-content {
-    top: 0;
     width: 50%;
     height: 100%;
     padding: 20px;
@@ -26,6 +24,7 @@
     color: #fff;
     text-align: justify;
     position: absolute;
+    overflow-y: scroll;
 }
 
 .al-team-person:nth-child(odd) .al-team-person-content {
