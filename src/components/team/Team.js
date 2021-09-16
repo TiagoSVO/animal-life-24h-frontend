@@ -14,7 +14,7 @@ export default class Team extends Component {
                     <span></span>
                     <h2>Equipe</h2>
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row al-team-people-wrap d-flex justify-content-between text-center">
                         <div className="col-12 col-md-6 al-team-person" style={{backgroundImage:"url("+laisPhoto+")"}}>
                             <div className="al-team-person-content">

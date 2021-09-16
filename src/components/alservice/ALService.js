@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import './ALServices.scss'
+import './ALService.scss'
 
 import servicesData from '../../fixtures/servicesItems'
 
