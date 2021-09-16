@@ -1,26 +1,9 @@
-#al-team {
-    
-}
-
-.al-team-wrap {
-    
-}
-
 .al-team-person {
     height: 100vh;
     background-size: cover;
     background-position: center;
     width: 50%;
     position: relative;
-}
-
-.al-team-person:nth-child(2n+1) {
-    height: width;
-    background-color: blue;
-}
-
-.al-team-person:nth-child(2n) {
-    background-color: red;
 }
 
 .al-team-person-content { 
