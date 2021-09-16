@@ -14,48 +14,48 @@ export default class Team extends Component {
                     <span></span>
                     <h2>Equipe</h2>
                 </div>
-                <div className="container">
-                    <div className="row al-team-people-wrap d-flex justify-content-between text-center">
-                        <div className="col-12 col-md-6 al-team-person" style={{backgroundImage:"url("+laisPhoto+")"}}>
-                            <div className="al-team-person-content">
-                                <h3>Dra. Laís</h3>
-                                <p>
-                                    Dra. Laís Dantas, médica 
-                                    veterinária faz parte da equipe Animal
-                                    Life em clínica médica e cirúrgica
-                                    de pequenos animais. Sua simpatia e 
-                                    dedicação com os animais é exemplar!
-                                </p>
-                                <p>
-                                    Venha conhecer nosso centro
-                                    veterinário, contamos com uma
-                                    equipe multidisciplinar para
-                                    melhor atendê-lo.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-md-6 al-team-person" style={{backgroundImage:"url("+harturPhoto+")"}}>
-                            <div className="al-team-person-content">
-                                <h3>Dr. Hartur</h3>
-                                <p>
-                                Dr Hartur Nunes, médico veterinário 
-                                especialista em anestesiologia de grandes, 
-                                exóticos e pequenos animais. Possui 
-                                experiência em clínica médica e
-                                cirúrgica de pequenos animais
-                                há mais 7 anos. Sua principal característica 
-                                é realizar exame pré-anestésico 
-                                em seus pacientes, onde é fundamental 
-                                para ter um procedimento anestesico e
-                                cirúrgico tranquilo.
-                                </p>
-                                <p>
+                <div className="al-team-wrap flex-wrap d-flex justify-content-between">
+                    <div className="al-team-person" style={{backgroundImage:"url("+laisPhoto+")"}}>
+                        <div className="al-team-person-content">
+                            <h3>Dra. Laís</h3>
+                            <hr/>
+                            <p>
+                                Dra. Laís Dantas, médica 
+                                veterinária faz parte da equipe Animal
+                                Life em clínica médica e cirúrgica
+                                de pequenos animais. Sua simpatia e 
+                                dedicação com os animais é exemplar!
+                            </p>
+                            <p>
                                 Venha conhecer nosso centro
-                                veterinário contamos com uma
+                                veterinário, contamos com uma
                                 equipe multidisciplinar para
                                 melhor atendê-lo.
-                                </p>
-                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="al-team-person" style={{backgroundImage:"url("+harturPhoto+")"}}>
+                        <div className="al-team-person-content">
+                            <h3>Dr. Hartur</h3>
+                            <hr/>
+                            <p>
+                            Dr Hartur Nunes, médico veterinário 
+                            especialista em anestesiologia de grandes, 
+                            exóticos e pequenos animais. Possui 
+                            experiência em clínica médica e
+                            cirúrgica de pequenos animais
+                            há mais 7 anos. Sua principal característica 
+                            é realizar exame pré-anestésico 
+                            em seus pacientes, onde é fundamental 
+                            para ter um procedimento anestesico e
+                            cirúrgico tranquilo.
+                            </p>
+                            <p>
+                            Venha conhecer nosso centro
+                            veterinário contamos com uma
+                            equipe multidisciplinar para
+                            melhor atendê-lo.
+                            </p>
                         </div>
                     </div>
                 </div>
