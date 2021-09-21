@@ -20,7 +20,7 @@ export default class NavTop extends Component {
                     </div>
                     <div className="w-50 text-end">
                         <span className="nav-item m-2">
-                            <i className="bi bi-envelope-fill" role="img" aria-label="Email - (61) 3542-4076"></i>
+                            <i className="bi bi-envelope-fill" role="img" aria-label="Email"></i>
                         </span>
                         <span className="nav-item m-2">
                             <i className="bi bi-instagram" role="img" aria-label="Telefone - (61) 3542-4076"></i>

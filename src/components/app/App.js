@@ -25,11 +25,7 @@ function App() {
             <Contact />
             <Gmap />
             <Footer />
-            <div>
-                {init()}
-                <h1>Olá Mundo!</h1>
-                <small>Agora com react.</small>
-            </div>
+            {init()}
         </React.Fragment>
     )
 }

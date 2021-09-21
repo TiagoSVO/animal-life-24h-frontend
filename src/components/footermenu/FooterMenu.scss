@@ -1,5 +1,48 @@
 #al-footer-menu{
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
     background-color: #012338;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.al-footer-menu-inner-col {
+    text-align: justify;
+    padding: 20px;
+
+    .al-footer-menu-inner-col-divider {
+        margin:10px;
+        display: block;
+        position: relative;
+        clear: both;
+    }
+
+    .al-footer-menu-logo {
+        float: left;
+        width: 25%;
+        margin: 0 15px 5px 0;
+    }
+
+    h5 {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            text-indent: none;
+            margin: 15px 0;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    i {
+        margin-right: 10px;
+    }
 }
