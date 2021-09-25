@@ -44,13 +44,13 @@
     box-shadow: 0 0 0px #aaa;
     border-radius: 0.25em;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .al-posts-button:hover {
     color: #fff;
-    box-shadow: 0 0 10px #aaa;
+    box-shadow: 0px 5px 5px #aaa;
     transition: 0.3s;
-    font-size: 1.6em;
 }
 
 .al-posts-button:active {
@@ -68,6 +68,14 @@
 .al-posts-card {
     margin: 0 15px;
     position: relative;
+    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 0);
+    transition: 0.75s;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 1);
+        transition: 0.5s;
+    }
+
 }
 
 .al-posts-card-image-wrap {
@@ -114,9 +122,11 @@
     a {
         color: rgba(42,172,64,1);
         text-decoration: none;
+        transition: 0.3s;
 
         &:hover {
             color: rgba(13,77,121,1);
+            transition: 0.5s;
         }
     }
 }

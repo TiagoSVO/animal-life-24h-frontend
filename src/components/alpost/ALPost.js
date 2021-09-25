@@ -82,7 +82,7 @@ export default class ALPost extends Component {
                     <span></span>
                 </div>
                 <div className="d-flex align-items-center al-posts-footer justify-content-center">
-                    <a className="al-posts-button" type="button">Todos os posts</a>
+                    <a className="al-posts-button" >Todos os posts</a>
                 </div>
             </section>
         )
