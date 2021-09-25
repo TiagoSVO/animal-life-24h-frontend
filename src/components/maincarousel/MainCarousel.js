@@ -1,38 +1,38 @@
 import React, { Component } from 'react';
-import './MainCarousel.css'
+import './MainCarousel.css';
+import dataCarousel from '../../fixtures/carouselItems';
 
 export default class MainCarousel extends Component {
     constructor(props) {
         super(props)
+
+        this.state = {
+            carouselItems: dataCarousel
+        }
     }
 
     render() {
+        let carouselItems = this.state.carouselItems
         return(
             <div id="mainCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    {carouselItems.map((item, i) => {
+                        return(
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to={i} className={item.id === carouselItems[0].id ? 'active' : ''} aria-current="true" aria-label={'Slide '+ item.id}></button>
+                        )
+                    })}
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active" style={{backgroundColor: '#333', backgroundImage: 'url('+'https://picsum.photos/id/237/2000/2000'+')'}}>
-                        <div className="carousel-caption">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div className="carousel-item" style={{backgroundColor: '#333', backgroundImage: 'url('+'https://picsum.photos/id/1062/2000/2000'+')'}}>
-                    <div className="carousel-caption">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                    </div>
-                    <div className="carousel-item" style={{backgroundColor: '#333', backgroundImage: 'url('+'https://picsum.photos/id/169/2000/2000'+')'}}>
-                    <div className="carousel-caption">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide. Some representative placeholder content for the third slide. Some representative placeholder content for the third slide.</p>
-                    </div>
-                    </div>
+                    {carouselItems.map((item, i) => {
+                        return(
+                            <div className={'carousel-item ' + (item.id === carouselItems[0].id ? 'active' : '')} style={{backgroundColor: '#333', backgroundImage: 'url('+item.image+')'}}>
+                                <div className="carousel-caption">
+                                    <h5>{item.title}</h5>
+                                    <p>{item.description}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

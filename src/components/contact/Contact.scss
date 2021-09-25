@@ -2,4 +2,76 @@
     min-height: 100vh;
     width: 100%;
     background-color: #1a5774;
+    color: #fff;
+    padding: 20px 0;
+
+    input, textarea {
+        border: 1px solid #093854;
+    }
+
+    .al-contact-content-wrap {
+        padding: 0 20px;
+    }
+
+    .al-contact-line-divider-right {
+        border-right: 1px solid #093854;
+        padding: 30px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 3em;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .al-contact-content-info {
+
+        .col {
+            border-bottom: 1px solid #093854;
+            margin: 0 20px 20px;
+            padding: 0;
+        }
+
+        &:last-child .col {
+            border-bottom: none;
+        }
+
+        .al-contact-redes-sociais {
+            a i {
+                color: #fff;
+                font-size: 3em;
+                margin-right: 20px;
+                text-shadow: 0px 0px 0px rgba($color: #fff, $alpha: 0);
+                transition: 0.3s text-shadow;
+                
+                &:hover {
+                    text-shadow: 0px 0px 5px rgba($color: #fff, $alpha: 1);
+                    transition: 0.3s text-shadow;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #al-contact {
+        .al-contact-content-wrap {
+            padding: 0 0;
+        }
+
+        .al-contact-line-divider-right {
+            border-right: 2px solid #093854;
+            padding: 15px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #al-contact {
+        .al-contact-line-divider-right {
+            border-right: none;
+        }
+    }
 }

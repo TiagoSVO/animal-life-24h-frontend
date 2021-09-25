@@ -6,6 +6,11 @@
     position: relative;
     padding: 20px 0;
     display: grid;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 #al-services * {
@@ -68,6 +73,41 @@ $hexagon-u: 1px;
 .al-services-content {
     padding: 0 10px;
     text-align: justify;
+}
+
+.al-service-card-wrap {
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);    
+
+    &:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1);
+        
+
+        .al-hexagon-wrap {
+            animation-name: bright;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .al-service-card {
+            transition: 0.3s;
+        }
+    }
+    
+}
+
+@keyframes bright {
+    0% {
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+    }
 }
 
 .al-service-card {

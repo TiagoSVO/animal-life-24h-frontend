@@ -27,17 +27,18 @@ export default class About extends Component {
                 <div className="container al-main-about-content d-flex flex-row justify-content-center align-items-center">
                     <div className="row gx-0">
                         <div className="col p-5">
-                            <p>Lorem ipsum dolor sit amet, 
-                            consectetuer adipiscing elit, 
-                            sed diam nonummy nibh euismod 
-                            ncidunt ut laoreet dolore magna 
-                            aliquam erat volutpat. Ut wisi 
-                            enim ad minim veniam, quis nostrud 
-                            exerci taron ullamcorper suscipit 
-                            loboris nisl ut aliquip ex ea 
-                            commodo consequat. Duis autem vel 
-                            eum iriure dolor in hendrerit in 
-                            vulputate velit esse molestie.</p>
+                            <p>O Centro avançado de especialidades veterinárias animal life, 
+                            inaugurado em Novembro de 2020, nasceu da ideia de reunir diversos 
+                            profissionais com especialidades distintas, afim de promover 
+                            tratamentos modernos e seguros para nossos pacientes. Aqui somos 
+                            uma família, possuímos mais de 18 médicos veterinários que dedicam 
+                            suas vidas para oferecer a melhor experiência no cuidado com seu pet, 
+                            com a missão de promover a ética profissional, o bem-estar animal, 
+                            muito carinho, amor e satisfação de nossos clientes.
+                            </p>
+                            <p>Nossos colaboradores possuem experiência nas diversas áreas de 
+                            atuação além de serem habituados e treinados em lidar com nossos 
+                            queridos Pets.</p>
                         </div>
                     </div>
                 </div>
