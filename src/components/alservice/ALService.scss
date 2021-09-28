@@ -33,11 +33,17 @@
     display: block;
 }
 
-.al-services-title h3 {
-    color: white;
-    line-height: 75px;
-    font-size: 3em;
-    text-transform: uppercase;
+.al-services-title {
+    
+    h2 {
+        color: white;
+        line-height: 75px;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: 'Josefin-Sans', 'sans-serif';
+        font-size: 4rem;
+        margin: 0.25em 0px 1px;
+    }
 }
 
 #al-services h3 {

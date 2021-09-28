@@ -2,7 +2,7 @@ module.exports = [{
     "id": 1,
     "image": 'https://picsum.photos/id/237/2000/400',
     "title": "Seja Bem-Vindo!",
-    "description": "A nossa clínica dispõe de uma excelente estrutura para cuidar do seu melhor amigo. Contamos com uma equipe altamente qualificada que vai tratar do seu animal com muito carinho e profissionalismo. Venha nos Ccnhecer!"
+    "description": "A nossa clínica dispõe de uma excelente estrutura para cuidar do seu melhor amigo. Contamos com uma equipe altamente qualificada que vai tratar do seu animal com muito carinho e profissionalismo. Venha nos conhecer!"
 },{
     "id": 2,
     "image": 'https://picsum.photos/id/1062/2000/400',

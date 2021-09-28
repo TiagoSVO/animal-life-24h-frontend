@@ -73,6 +73,7 @@ export default class Contact extends Component {
                                         <div className="col">
                                             <p><strong>REDES SOCIAIS</strong></p>
                                             <div className="al-contact-redes-sociais">
+                                                <a target='_blank' href="https://wa.me/5561996853227"><i class="bi bi-whatsapp" role="img" aria-label="Telefone - (61) 3542-4076"></i></a>
                                                 <a href="https://www.instagram.com/animallife24h/"><i className="bi bi-instagram" role="img" aria-label="Telefone - (61) 3542-4076"></i></a>
                                                 <a href="https://www.youtube.com/channel/UCgDi63POKCY6MzlytsfbfHw"><i className="bi bi-youtube" role="img" aria-label="Telefone - (61) 3542-4076"></i></a>
                                             </div>

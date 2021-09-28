@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Josefin-Sans';
+    src: url('../fonts/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .al-main-title {
     position: relative;
     min-height: 100px;
@@ -7,10 +15,12 @@
     text-transform: uppercase;
     overflow: hidden;
     text-align: center;
-}
 
-.al-main-title h2 {
-    font-size: 3rem;
+    h2 {
+        font-family: 'Josefin-Sans', 'sans-serif';
+        font-size: 4rem;
+        margin: 0.25em 0px 1px;
+    }
 }
 
 .al-main-title span {

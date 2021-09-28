@@ -19,7 +19,7 @@ export default class ALServices extends Component {
                 <section id="al-services" style={{backgroundImage: 'url(https://picsum.photos/id/837/2000)'}}>
                     <div className="al-green-screen"></div>
                     <div className="al-services-title text-center">
-                            <h3>Serviços</h3>
+                            <h2>Serviços</h2>
                         </div>
                         <div className="al-services-content">
                             <div className="container">

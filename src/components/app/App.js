@@ -10,7 +10,7 @@ import Contact from '../contact/Contact';
 import Gmap from '../gmap/Gmap';
 import Footer from '../footer/Footer';
 
-import { init, say_hello } from '../../assets/js/utils';
+import { init } from '../../assets/js/utils';
 import './App.css';
 
 function App() {
