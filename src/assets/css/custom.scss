@@ -56,3 +56,11 @@
     transition: 1s;
     transition-delay: 0.5s;
 }
+
+@media (max-width: 765px) {
+    .al-main-title {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}

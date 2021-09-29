@@ -83,6 +83,14 @@
 
 .al-posts-card-image-wrap {
     position: relative;
+
+    .card-img-top {
+        height: 200px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .al-posts-card-data-wrap {
@@ -117,6 +125,10 @@
 
 .al-posts-divider-card {
     margin: 10px 0;
+}
+
+.card-text {
+    text-align: justify;
 }
 
 .card-text-bottom {

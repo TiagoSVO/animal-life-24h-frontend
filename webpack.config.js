@@ -8,6 +8,11 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
     mode: modoDev ? 'development' : 'production',
+    resolve: {
+      fallback: {
+        "buffer": false
+      }
+    },
     entry: './src/index.js',
     output: {
         filename: 'index.js',

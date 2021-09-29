@@ -19,11 +19,21 @@
     }
 
     h2 {
-        text-transform: uppercase;
-        font-size: 3em;
         text-align: center;
         line-height: 1;
-        margin-bottom: 20px;
+        line-height: 75px;
+        text-transform: uppercase;
+        font-family: 'Josefin-Sans', 'sans-serif';
+        font-size: 3.7rem;
+    }
+
+    #al-posts h2 {    
+        line-height: 75px;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: 'Josefin-Sans', 'sans-serif';
+        font-size: 4rem;
+        margin: 0.25em 0px 1px;
     }
 
     .al-contact-content-info {
@@ -65,7 +75,13 @@
             border-right: 2px solid #093854;
             padding: 15px;
         }
+
+        h2 {
+            font-size: 2rem;
+        }
     }
+
+    
 }
 
 @media (max-width: 767px) {

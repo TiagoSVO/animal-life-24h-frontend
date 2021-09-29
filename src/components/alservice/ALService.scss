@@ -121,6 +121,10 @@ $hexagon-u: 1px;
 }
 
 @media (max-width: 767px) {
+    h2 {
+        font-size: 2rem;
+    }
+
     .al-service-card {
         margin-top: 20px;
         margin-bottom: 40px;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactHtmlParser from 'react-html-parser';
 
 import './ALPost.scss'
 
@@ -38,18 +39,20 @@ export default class ALPost extends Component {
                                                     {post.date.mounth}
                                                 </div>
                                             </div>
-                                            <img src={post.image} className="card-img-top" alt="..." />
+                                            <div style={{backgroundImage: `url(${post.image})`}} className="card-img-top" alt="..." />
                                         </div>
                                         <div className="card-body">
                                             <h5 className="card-title">{post.title}</h5>
                                             <div className="al-posts-divider-card">
                                                 <span></span>
                                             </div>
-                                            <p className="card-text">{post.description}</p>
+                                            <p className="card-text">{ReactHtmlParser(post.description)}</p>
                                             <br/>
-                                            <p className="card-text-bottom">
-                                                <a href="">Leia mais...</a>
-                                            </p>
+                                            {post.url != null &&
+                                                <p className="card-text-bottom">
+                                                    <a target="_blank" href={post.url}>Leia mais...</a>
+                                                </p>   
+                                            }
                                         </div>
                                         <div className="card-footer bg-transparent al-posts-card-footer">
                                             <small className="al-posts-card-footer-categories"><strong>Categorias:</strong> {
