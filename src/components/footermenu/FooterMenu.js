@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './FooterMenu.scss'
 import logo from '../../assets/imgs/logo_v1.png';
+import pegada from '../../assets/imgs/pegada.svg'
 
 export default class FooterMenu extends Component {
     constructor(props) {
@@ -11,6 +12,15 @@ export default class FooterMenu extends Component {
     render() {
         return(
             <section id="al-footer-menu">
+                <div className="al-footer-pegadas-left">
+                    
+                </div>
+                <div className="al-footer-pegadas-right">
+                    <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                    <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                    <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                    <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                </div>
                 <div className="container">
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                         <div className="col d-block">
@@ -43,12 +53,12 @@ export default class FooterMenu extends Component {
                                 <h5>Navegação</h5>
                                 <ul>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">Quem Somos</a></li>
-                                    <li><a href="#">Serviços</a></li>
-                                    <li><a href="#">Equipe</a></li>
-                                    <li><a href="#">Notícias</a></li>
+                                    <li><a href="#al-about">Quem Somos</a></li>
+                                    <li><a href="#al-service">Serviços</a></li>
+                                    <li><a href="#al-team">Equipe</a></li>
+                                    <li><a href="#al-news">Notícias</a></li>
                                     <li><a href="#">Clínica</a></li>
-                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#al-contact">Contato</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -69,12 +79,12 @@ export default class FooterMenu extends Component {
                                 <p>Segunda-Feira a Domingo 24h</p>
                                 <ul>
                                     <li>
-                                        <a href="#">
-                                            <i className="bi bi-telephone-fill" role="img" aria-label="Telefone"></i> (61) 3542-4076 | (61) 99685-3227
+                                        <a target='_blank' href="https://wa.me/5561996853227">
+                                            <i className="bi bi-telephone-fill" role="img" aria-label="Telefone" ></i> (61) 3542-4076 | (61) 99685-3227
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="">
                                             <i className="bi bi-envelope-fill" role="img" aria-label="Email"></i> animallifecontato@gmail.com
                                         </a>
                                     </li>
@@ -87,12 +97,12 @@ export default class FooterMenu extends Component {
                                 <h5>MÍDIAS SOCIAIS</h5>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/animallife24h/">
                                             <i className="bi bi-instagram" role="img" aria-label="Instagram"></i> Instagram
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.youtube.com/channel/UCgDi63POKCY6MzlytsfbfHw">
                                             <i className="bi bi-youtube" role="img" aria-label="Youtube"></i> Youtube
                                         </a>
                                     </li>
