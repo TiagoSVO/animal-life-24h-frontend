@@ -1,15 +1,30 @@
 import React, { Component } from 'react';
 
 import './Contact.scss'
+import pegada from '../../assets/imgs/pegada.svg'
 
 export default class Contact extends Component {
     constructor(props) {
         super(props)
     }
 
+    alertMaintenance(e) {
+        alert("Ops... Funcionalidade em manutenção! Tente nos contactar diretamente pelo e-mail ou whatsapp.")
+    }
+
     render() {
         return(
             <section id="al-contact">
+                <div className="al-contact-circles">
+                    <span className="al-contact-circle"></span>
+                    <span className="al-contact-circle"></span>
+                </div>
+                <div className="al-contact-pegadas">
+                    <span className="al-contact-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                    <span className="al-contact-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                    <span className="al-contact-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                    <span className="al-contact-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+                </div>
                 <h2>Fale Conosco</h2>
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-2">
@@ -37,7 +52,7 @@ export default class Contact extends Component {
                                         <textarea rows="10" className="form-control" id="alInputAssunto" />
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn btn-light float-end">Enviar</button>
+                                        <button type="button" class="btn btn btn-light float-end" onClick={() => {this.alertMaintenance()}}>Enviar</button>
                                     </div>
                                 </form>
                             </div>
@@ -54,7 +69,9 @@ export default class Contact extends Component {
                                     <div className="row al-contact-content-info">
                                         <div className="col">
                                             <p><strong>ENDEREÇO</strong></p>
-                                            <p>Quadra QNJ 26 12, LOJA 01/02 Taguatinga Norte - Taguatinga/DF</p>
+                                            <p>
+                                                <a target="_blank" href="https://www.google.com/maps/dir//Animal+Life+24+hs+-+Centro+Avan%C3%A7ado+de+Especialidades+Veterin%C3%A1rio+QNJ+26+Lote+12+Lojas+01%2F02+Taguatinga+Norte+Bras%C3%ADlia+-+DF,+72140-260/@-15.8173406,-48.08262,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a3b856716ec49:0x70dca8f7c7ec0d2b!2m2!1d-48.08262!2d-15.8173406">Quadra QNJ 26 12, LOJA 01/02 Taguatinga Norte - Taguatinga/DF</a>
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="row al-contact-content-info">

@@ -4,6 +4,84 @@
     background-color: #1a5774;
     color: #fff;
     padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+
+    h2, .container {
+        z-index: 1;
+        position: relative;
+    }
+
+    .al-contact-pegada {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 90px;
+        position: absolute;
+        z-index: 0;
+        opacity: 1;
+        filter: brightness(0.0);
+    }
+
+    .al-contact-pegadas .al-contact-pegada:nth-child(1) {
+        bottom: 0;
+        right: 15%;
+    }
+
+    .al-contact-pegadas .al-contact-pegada:nth-child(2) {
+        bottom: 10%;
+        right: 0%;
+    }
+
+    .al-contact-pegadas .al-contact-pegada:nth-child(3) {
+        bottom: 25%;
+        right: 10%;
+    }
+
+    .al-contact-pegadas .al-contact-pegada:nth-child(4) {
+        bottom: 40%;
+        right: 0;
+    }
+
+    .al-contact-circles {
+        opacity: 0.5;
+
+        .al-contact-circle {
+            background-color: transparent;
+            border: 20px solid #012338;
+            border-radius: 50%;
+            position: absolute;
+            
+            z-index: 0;
+
+            &:nth-child(1) {
+                width: 300px;
+                height: 300px;
+                top: -15%;
+                left: -10%;
+            }
+
+            &:nth-child(2) {
+                width: 400px;
+                height: 400px;
+                top: -20%;
+                left: 0;
+            }
+        }
+    }
+
+    a {
+        color: #fff;
+        text-shadow: 0px 0px 0px rgba($color: #fff, $alpha: 0);
+        transition: 0.3s text-shadow;
+        text-decoration: none;
+        
+        &:hover {
+            text-shadow: 0px 0px 5px rgba($color: #fff, $alpha: 1);
+            transition: 0.3s text-shadow;
+        }
+    }
 
     input, textarea {
         border: 1px solid #093854;
@@ -89,5 +167,35 @@
         .al-contact-line-divider-right {
             border-right: none;
         }
+    }
+    
+    #al-contact .al-contact-pegadas  {
+
+        .al-contact-pegada {
+            width: 50px;
+            height: 50px;
+            background-size: 45px;
+
+            &:nth-child(1) {
+                bottom: 0;
+                right: 7%;
+            }
+
+            &:nth-child(2) {
+                bottom: 7%;
+                right: 0%;
+            }
+
+            &:nth-child(3) {
+                bottom: 15%;
+                right: 5%;
+            }
+
+            &:nth-child(4) {
+                bottom: 22%;
+                right: 0;
+            }
+        }
+    
     }
 }
