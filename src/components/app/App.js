@@ -15,7 +15,7 @@ import './App.css';
 
 function App() {
     return (
-        <React.Fragment>
+        <main id="al-main" className="al-main">
             <Header />
             <MainCarousel />
             <About />
@@ -26,7 +26,7 @@ function App() {
             <Gmap />
             <Footer />
             {init()}
-        </React.Fragment>
+        </main>
     )
 }
 

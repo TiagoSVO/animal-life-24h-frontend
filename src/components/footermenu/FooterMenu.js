@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './FooterMenu.scss'
-import logo from '../../assets/imgs/logo_v1.png';
+import logo from '../../assets/imgs/logo.png';
 import pegada from '../../assets/imgs/pegada.svg'
 
 export default class FooterMenu extends Component {

@@ -77,7 +77,7 @@ export default class Contact extends Component {
                                     <div className="row al-contact-content-info">
                                         <div className="col">
                                             <p><strong>TELEFONES</strong></p>
-                                            <p>(61) 3542-4076 | (61) 99685-3227</p>
+                                            <p><a target='_blank' href="tel: (61) 3542-4076">(61) 3542-4076</a> | <a target='_blank' href="https://wa.me/5561996853227">(61) 99685-3227</a></p>
                                         </div>
                                     </div>
                                     <div className="row al-contact-content-info">

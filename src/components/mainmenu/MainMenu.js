@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './MainMenu.css';
+import './MainMenu.scss';
 
-import logo from '../../assets/imgs/logo_v1.png';
+import logo from '../../assets/imgs/logo.png';
 
 export default class MainMenu extends Component {
     constructor(props) {
@@ -16,8 +16,8 @@ export default class MainMenu extends Component {
                             <img className="img-fluid" src={logo} alt="logo Animal Life 24h" />
                         </a>
                         <div className="al-brand-title me-auto">
-                            <span>Centro Avançado<br/>
-                            de Especialidades Veterinárias</span>
+                            <h1>Centro Avançado<br/>
+                            de Especialidades Veterinárias</h1>
                         </div>
                         <button className="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

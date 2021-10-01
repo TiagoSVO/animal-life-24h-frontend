@@ -12,7 +12,9 @@
 }
 
 .al-brand-title {
-    font-size: 1.25rem;
+    h1 {
+        font-size: 1.25rem;
+    }
 }
 
 #navbarMainMenu ul li a{
@@ -76,7 +78,9 @@
     }
 
     .al-brand-title {
-        font-size: 1rem;
+        h1 {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -86,7 +90,9 @@
     }
 
     .al-brand-title {
-        font-size: 0.7rem;
+        h1 {
+            font-size: 0.7rem;
+        }
     }
 }
 
